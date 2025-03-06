@@ -12,22 +12,26 @@
 <body>
 <h2>Formulario de Registro</h2>
 <form action="#" method="post" onsubmit="return envio()">
-<label for="usuario">Nombre Usuario: </label>
-<input type="text" id="usuario" name="usuario" required><br>
-<label for="fecha">Fecha de Nacimiento:</label>
-<input type="date" id="fecha" name="fecha"><br><br>
-<button type="submit">Registrar Usu</button>
-<button type="reset">Borrar</button><br>
-<button type="reset" onclick="eliminar()">Borrar Usu</button><br>
-<table border>
-<tr>
-<th onclick="ordenar(0)">ID</th>
-<th onclick="ordenar(1)">Usuario</th>
-<th>Edad</th>
-</tr>
-<tbody id ="tabla">
-</tbody>
-</table>
-<script src = "main.js"></script>
+  <label for="usuario">Nombre Usuario: </label>
+  <input type="text" id="usuario" name="usuario" required><br>
+  <label for="fecha">Fecha de Nacimiento:</label>
+  <input type="date" id="fecha" name="fecha"><br><br>
+  <button type="submit">Registrar Usu</button>
+  <button type="reset">Borrar</button><br>
+  <button type="reset" onclick="eliminar()">Borrar Usu</button><br>
+  <table border>
+    <thead>
+      <tr>
+        <th onclick="ordenar(0)">ID</th>
+        <th onclick="ordenar(1)">Usuario</th>
+        <th>Edad</th>
+        <th>Validado</th>
+      </tr>
+    </thead>
+    <tbody id="tabla">
+    </tbody>
+  </table>
+</form>
+<script src="main.js"></script>
 </body>
 </html>
